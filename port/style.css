@@ -1,0 +1,165 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: var(--color);
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+h1 {
+  font-size: 6.5vh;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header h1 {
+  margin: 0;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  cursor: pointer;
+}
+
+
+#header {
+  z-index: 999;
+}
+
+#header.snapped {
+  height: 14vh;
+  background-color: var(--background-color);
+  color: var(--color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav.snapped {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.nav1 {
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav1.snapped {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.section {
+  position: relative;
+}
+
+.fp-tableCell {
+  vertical-align: bottom;
+}
+
+.page {
+  min-height: 86vh;
+  min-width: 100%;
+}
+
+.page.one {
+  background-color: green;
+
+}
+
+.page.two {
+  background-color: blue;
+
+}
+
+.page.three {
+  background-color: red;
+}
+
+.page.four {
+  background-color: rgb(4, 0, 255);
+}
