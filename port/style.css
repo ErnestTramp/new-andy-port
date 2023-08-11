@@ -90,6 +90,8 @@ main {
   top: 0;
   left: 0;
   right: 0;
+  background: var(--background-color);
+  z-index: 1;
 }
 
 .header h1 {
@@ -99,6 +101,23 @@ main {
   cursor: pointer;
 }
 
+.header-gif {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: url("https://media.tenor.com/fGfybuB14fwAAAAd/rick-rolled.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: .1;
+  transition: all .5s ease-in-out;
+}
+
+.header-gif.snapped {
+  opacity: 0;
+}
 
 #header {
   z-index: 999;
@@ -106,7 +125,6 @@ main {
 
 #header.snapped {
   height: 14vh;
-  background-color: var(--background-color);
   color: var(--color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

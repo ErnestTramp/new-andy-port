@@ -10,6 +10,7 @@ new fullpage("#fullpage", {
     const a1 = document.getElementById("nav2");
     const a2 = document.getElementById("nav3");
     const a3 = document.getElementById("nav4");
+    const gif = document.querySelector(".header-gif");
 
     if (destination.index > 0) {
       header.classList.add("snapped");
@@ -17,12 +18,14 @@ new fullpage("#fullpage", {
       a1.classList.add("snapped");
       a2.classList.add("snapped");
       a3.classList.add("snapped");
+      gif.classList.add("snapped");
     } else {
       header.classList.remove("snapped");
       a.classList.remove("snapped");
       a1.classList.remove("snapped");
       a2.classList.remove("snapped");
       a3.classList.remove("snapped");
+      gif.classList.remove("snapped");
     }
   },
 });
