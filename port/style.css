@@ -1,11 +1,16 @@
+@font-face {
+  font-family: "Lato-Light";
+  src: url("/Lato-Light.ttf");
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lato-Light", serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   --color: rgba(255, 255, 255, 0.87);
-  --background-color: #242424;
+  --background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -84,21 +89,23 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3vh;
+  gap: 5vh;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: var(--background-color);
+  background: transparent;
   z-index: 1;
 }
 
 .header h1 {
   margin: 0;
-  margin-left: 4vh;
-  margin-right: 4vh;
+  margin-left: 12vh;
+  margin-right: 12vh;
   cursor: pointer;
+  color: #fff;
+  opacity: 1;
 }
 
 .header-gif {
@@ -108,10 +115,10 @@ main {
   top: 0;
   left: 0;
   z-index: 0;
-  background: url("https://media.tenor.com/fGfybuB14fwAAAAd/rick-rolled.gif");
+  background: url("/bg.gif");
   background-size: cover;
   background-position: center;
-  opacity: .1;
+  opacity: .5;
   transition: all .5s ease-in-out;
 }
 
@@ -127,6 +134,12 @@ main {
   height: 14vh;
   color: var(--color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#header.snapped h1 {
+  letter-spacing: 10px;
+  font-size: 4vh;
+  transition: all .5s ease-in-out;
 }
 
 .nav {
@@ -160,22 +173,147 @@ main {
 }
 
 .page {
-  min-height: 86vh;
+  min-height: 100vh;
   min-width: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
 .page.one {
-  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.page.one p {
+  font-size: 3.7vh;
+  margin: 1vh 1vh 1vh 1vh;
 }
 
 .page.two {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.page.two h3 {
+  margin-top: 15vh;
+  margin-bottom: 2vh;
+}
+
+.projects-content {
+  width: 100%;
+  max-height: 75vh;
+  row-gap: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.project {
+  background-color: #646cff;
+  width: 47%;
+  height: 37.5vh;
+  margin-right: 2vh;
+  border-radius: 15px;
+}
+
+.cash {
+  background: url("/projects/01cash.png");
+  background-size: cover;
+}
+
+.yt {
+  background: url("/projects/02yt.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.lumberjack {
+  background: url("/projects/03lumber.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.guitar {
+  background: url("/projects/04gu.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.ball {
+  background: url("/projects/05 9Ball.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.astro {
+  background: url("/projects/06 Astronaut.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bbf {
+  background: url("/projects/07 Berg Bounce Fest.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bergan {
+  background: url("/projects/08 Berg Announcement.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.kbms {
+  background: url("/projects/09 24 Kbms.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.big {
+  background: url("/projects/10 Biggest Trampoline.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.jesse {
+  background: url("/projects/11 Jesse Heffels.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.wc {
+  background: url("/projects/13 WorldChamps.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.prolaunch {
+  background: url("/projects/14 Berg Pro Launcher.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.threedee {
+  background: url("/projects/15 2Dto3D.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.salon {
+  background: url("/projects/12 Salon.png");
+  background-size: cover;
+  background-position: center center;
 }
 
 .page.three {
-  background-color: red;
+  min-height: 86vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page.four {

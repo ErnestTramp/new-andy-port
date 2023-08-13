@@ -1,5 +1,5 @@
 new fullpage("#fullpage", {
-  anchors: ["head", "projects", "about", "contact", "blabla"], // Add anchors for each section/page
+  anchors: ["head", "projects", "about", "contact"], // Add anchors for each section/page
   navigation: true, // Add navigation dots
   scrollOverflow: true, // Allow content overflow
   scrollBar: false, // Show scroll bar
@@ -10,6 +10,8 @@ new fullpage("#fullpage", {
     const a1 = document.getElementById("nav2");
     const a2 = document.getElementById("nav3");
     const a3 = document.getElementById("nav4");
+    const a4 = document.getElementById("nav5");
+    const a5 = document.getElementById("nav6");
     const gif = document.querySelector(".header-gif");
 
     if (destination.index > 0) {
@@ -18,6 +20,8 @@ new fullpage("#fullpage", {
       a1.classList.add("snapped");
       a2.classList.add("snapped");
       a3.classList.add("snapped");
+      a4.classList.add("snapped");
+      a5.classList.add("snapped");
       gif.classList.add("snapped");
     } else {
       header.classList.remove("snapped");
@@ -25,6 +29,8 @@ new fullpage("#fullpage", {
       a1.classList.remove("snapped");
       a2.classList.remove("snapped");
       a3.classList.remove("snapped");
+      a4.classList.remove("snapped");
+      a5.classList.remove("snapped");
       gif.classList.remove("snapped");
     }
   },
