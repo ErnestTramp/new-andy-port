@@ -1,5 +1,5 @@
 new fullpage("#fullpage", {
-  anchors: ["head", "projects", "about", "contact"], // Add anchors for each section/page
+  anchors: ["head", "aboutshort", "projects", "quote", "aboutlong", "contact"], // Add anchors for each section/page
   navigation: true, // Add navigation dots
   scrollOverflow: true, // Allow content overflow
   scrollBar: false, // Show scroll bar
