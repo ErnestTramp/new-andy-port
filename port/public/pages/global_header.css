@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Lato-Light";
+    src: url("../Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../Lato-Bold.ttf");
+}
+
+:root {
+    font-family: "Lato-Light", serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    --color: rgba(255, 255, 255, 0.87);
+    --background-color: #000;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: inherit;
+    color: var(--color);
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+h1 {
+    font-size: 6.5vh;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 14vh;
+    color: var(--color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+header h1 {
+    transform: scale(0.5);
+    transition: all .5s ease-in-out;
+    letter-spacing: 10px;
+}
+
+.navrow {
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,28 @@
+.page-wrapper {
+    width: 60%;
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 120vh;
+    border-radius: 10px;
+}
+
+.text {
+    flex-grow: 1;
+    height: 20vh;
+    text-align: center;
+}
+
+.text h1 {
+    font-family: "Lato-Bold", sans;
+    font-size: 3.5vh;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
