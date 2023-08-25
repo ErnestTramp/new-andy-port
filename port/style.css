@@ -116,7 +116,8 @@ main {
   letter-spacing: 20px;
   z-index: 2;
   transition: all .5s ease-in-out;
-
+  text-align: center;
+  white-space: nowrap;
 }
 
 .header-gif {
@@ -314,6 +315,8 @@ main {
 .project h2:first-child {
   font-size: 2vh;
   letter-spacing: 2px;
+  text-transform: uppercase;
+
 }
 
 .project h2:last-child {
@@ -517,6 +520,7 @@ form textarea {
   bottom: 12%;
   right: 48%;
   transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 999;
 }
 
 .container {
@@ -532,8 +536,8 @@ form textarea {
 
 .chevron {
   position: absolute;
-  width: 5vh;
-  height: 1vh;
+  width: 4.5vh;
+  height: .7vh;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
@@ -555,6 +559,8 @@ form textarea {
   height: 100%;
   width: 51%;
   background: #fff;
+  border-radius: 2px 0px 2px 2px;
+
 }
 
 .chevron:before {
@@ -576,12 +582,12 @@ form textarea {
 
   33% {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 
   67% {
     opacity: 1;
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
 
   100% {

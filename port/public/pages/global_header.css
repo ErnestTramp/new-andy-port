@@ -110,3 +110,7 @@ header h1 {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.instagram-media {
+    border-radius: 15px !important;
+}

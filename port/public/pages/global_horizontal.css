@@ -26,3 +26,7 @@
     text-transform: uppercase;
     margin-bottom: 2vh;
 }
+
+.instagram-media {
+    border-radius: 15px !important;
+}
