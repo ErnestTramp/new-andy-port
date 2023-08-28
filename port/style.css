@@ -101,7 +101,7 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  background: transparent;
+  background: black;
   z-index: 1;
 }
 
@@ -118,6 +118,24 @@ main {
   transition: all .5s ease-in-out;
   text-align: center;
   white-space: nowrap;
+}
+
+/* 
+.header::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(94deg, rgba(0, 0, 0, 0) 0%, rgba(206, 206, 206, 0.6) 20%, rgba(206, 206, 206, 0.6) 83%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: 0;
+
+} */
+
+.nav,
+.header h1 {
+  margin-top: 1.5vh;
+
 }
 
 .header-gif {
@@ -142,9 +160,9 @@ main {
 }
 
 #header.snapped {
-  height: 14vh;
+  height: 10vh;
   color: var(--color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 55px rgba(0, 0, 0, 1);
 }
 
 #header.snapped h1 {
@@ -223,7 +241,7 @@ main {
 }
 
 .page.two h2 {
-  margin-top: 15vh;
+  margin-top: 12vh;
   margin-bottom: 2vh;
   letter-spacing: 5px;
   font-weight: 900;
@@ -232,7 +250,7 @@ main {
 
 .projects-content {
   width: 100%;
-  max-height: 75vh;
+  max-height: 99vh;
   gap: 2vh;
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +259,23 @@ main {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--color) var(--background-color);
+}
+
+.projects-inner {
+  width: 100%;
+  gap: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color) var(--background-color);
+  flex-grow: 1;
+}
+
+.projects-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .projects-content::-webkit-scrollbar {
@@ -297,7 +332,6 @@ main {
   color: #fff;
   transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
   opacity: 0;
-  letter-spacing: 20px;
   transform: translateY(200px);
 }
 
@@ -308,8 +342,6 @@ main {
 .project:hover h2 {
   opacity: 1;
   transform: translateY(0);
-  letter-spacing: 1px;
-
 }
 
 .project h2:first-child {
