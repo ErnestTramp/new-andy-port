@@ -28,3 +28,7 @@
     text-transform: uppercase;
     margin-bottom: 10vh;
 }
+
+.projectNav {
+    max-width: 80% !important;
+}

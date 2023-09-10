@@ -114,3 +114,112 @@ header h1 {
 .instagram-media {
     border-radius: 15px !important;
 }
+
+.projectNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    gap: 1vh;
+    margin-bottom: 10vh;
+
+}
+
+.navProject {
+    width: 19%;
+    min-height: 12vh;
+    border-radius: 5px;
+}
+
+/* IMAGES */
+
+.cash {
+    background: url("/projects/01cash.png");
+    background-size: cover;
+}
+
+.yt {
+    background: url("/projects/02yt.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.lumberjack {
+    background: url("/projects/03lumber.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.guitar {
+    background: url("/projects/04gu.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.ball {
+    background: url("/projects/05 9Ball.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.astro {
+    background: url("/projects/06 Astronaut.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.bbf {
+    background: url("/projects/07 Berg Bounce Fest.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.bergan {
+    background: url("/projects/08 Berg Announcement.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.kbms {
+    background: url("/projects/09 24 Kbms.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.big {
+    background: url("/projects/10 Biggest Trampoline.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.jesse {
+    background: url("/projects/11 Jesse Heffels.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.wc {
+    background: url("/projects/13 WorldChamps.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.prolaunch {
+    background: url("/projects/14 Berg Pro Launcher.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.threedee {
+    background: url("/projects/15 2Dto3D.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.salon {
+    background: url("/projects/12 Salon.png");
+    background-size: cover;
+    background-position: center center;
+}
