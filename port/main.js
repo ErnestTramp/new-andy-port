@@ -1,9 +1,11 @@
 new fullpage("#fullpage", {
   anchors: ["head", "aboutshort", "projects", "quote", "aboutlong", "contact"], // Add anchors for each section/page
-  navigation: false, // Add navigation dots
-  scrollOverflow: true, // Allow content overflow
+  navigation: true, // Add navigation dots
+  scrollOverflow: true,
   scrollBar: false, // Show scroll bar
   menu: ".header",
+  autoScrolling: true,
+  normalScrollElements: ".projects-content",
   onLeave: function (origin, destination, direction) {
     const header = document.getElementById("header");
     const a = document.getElementById("nav1");
