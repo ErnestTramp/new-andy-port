@@ -35,6 +35,8 @@ a:hover {
 }
 
 body {
+  overflow-x: hidden;
+
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -654,4 +656,55 @@ textarea:focus {
   font-size: 3.5vh;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navrow {
+    display: none;
+  }
+
+  .header {
+    text-align: center;
+
+  }
+
+  .header h1 {
+    font-size: 4vh;
+    text-wrap: wrap;
+  }
+
+  .scrolldown {
+    right: 36%;
+    bottom: 5%;
+  }
+
+  .page.one p {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .projects-content {
+    padding: 0 !important;
+  }
+
+  .project {
+    width: 97%;
+  }
+
+  .stupid-wrapper {
+    flex-direction: column;
+  }
+
+  .row {
+    width: 97%;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+  }
 }

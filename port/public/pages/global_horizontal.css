@@ -128,3 +128,18 @@
         transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .video {
+        width: 44vh;
+    }
+
+    .titleHori {
+        display: none;
+    }
+
+    .text {
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+    }
+}

@@ -219,3 +219,69 @@
 .instagram-media {
     border-radius: 10px !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .page-wrapper {
+        width: 100%;
+    }
+
+    .text {
+        max-width: 80%;
+    }
+
+    .radial_hero {
+        width: 100%;
+    }
+
+    .scrolldown {
+        display: none;
+    }
+
+    .page-2-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .text1 {
+        margin: 0;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .img_radialball {
+        width: 70%;
+        margin: 0;
+    }
+
+    .img_radialcoin {
+        width: 70%;
+        margin: 0;
+    }
+
+    .page-3-wrapper {
+        flex-direction: column;
+    }
+
+    .text2 {
+        margin: 0;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8 {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .img-wrapper {
+        flex-direction: column;
+    }
+
+    .text4 {
+        padding-bottom: 5vh;
+    }
+}
