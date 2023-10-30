@@ -1,11 +1,10 @@
 new fullpage("#fullpage", {
-  anchors: ["head", "aboutshort", "projects", "quote", "aboutlong", "contact"], // Add anchors for each section/page
-  navigation: true, // Add navigation dots
+  anchors: ["head", "aboutshort", "projects", "quote", "aboutlong", "contact"],
+  navigation: false,
   scrollOverflow: true,
-  scrollBar: false, // Show scroll bar
+  scrollBar: false,
   menu: ".header",
   autoScrolling: true,
-  normalScrollElements: ".projects-content",
   onLeave: function (origin, destination, direction) {
     const header = document.getElementById("header");
     const a = document.getElementById("nav1");
@@ -34,6 +33,15 @@ new fullpage("#fullpage", {
       a4.classList.remove("snapped");
       a5.classList.remove("snapped");
       gif.classList.remove("snapped");
+    }
+  },
+  afterLoad: function (origin, destination, direction) {
+    if (destination.anchor === "projects") {
+      fullpage_api.setAllowScrolling(true, "down");
+      fullpage_api.setKeyboardScrolling(true, "down");
+    } else {
+      fullpage_api.setAllowScrolling("auto");
+      fullpage_api.setKeyboardScrolling("auto");
     }
   },
 });

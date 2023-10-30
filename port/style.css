@@ -250,7 +250,6 @@ main {
 
 .projects-content {
   width: 100%;
-  max-height: 99vh;
   gap: 2vh;
   display: flex;
   flex-wrap: wrap;
